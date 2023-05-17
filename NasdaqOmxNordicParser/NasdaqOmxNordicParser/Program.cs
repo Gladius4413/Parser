@@ -20,6 +20,13 @@ namespace NasdaqOmxNordicParser
             string baseUrl = "https://www.nasdaqomxnordic.com/";
             string contentUrl = "https://www.nasdaqomxnordic.com/optionsandfutures/microsite?Instrument=SE0000337842";
             string filePath = $"{date}.csv";
+            Log.Logger = new LoggerConfiguration()
+                .MinimumLevel.Information()
+                .WriteTo.Console()
+                .WriteTo.File("logKrxNosdaqParser.txt", rollingInterval: RollingInterval.Day)
+                .CreateLogger();
+                
+
             try {
                 var res = GetData(baseUrl, contentUrl);
                 PutDateToFile(res, filePath);
