@@ -29,7 +29,7 @@ namespace NasdaqOmxNordicParser
 
             try {
                 var res = GetData(baseUrl, contentUrl);
-                PutDateToFile(res, filePath);
+                PutDataToFile(res, filePath);
             }
             catch (Exception ex) { Console.WriteLine(ex.Message); } 
             
@@ -82,7 +82,7 @@ namespace NasdaqOmxNordicParser
 
             return data;
         }
-        private static void PutDateToFile(object resultStat, string filePath)
+        private static void PutDataToFile(object resultStat, string filePath)
         {
             var writer = new StreamWriter(filePath);
             Log.Information("Writing data to CSV file {FilePath}", filePath);

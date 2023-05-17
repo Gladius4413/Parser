@@ -27,7 +27,7 @@ internal class Program
         {
             Log.Information("Getting JSON content from {Url}", url);
             var resultStat = GetData(url);
-            PutDateToFile(resultStat, filePath);
+            PutDataToFile(resultStat, filePath);
             Log.Information("Done");
 
 
@@ -37,7 +37,7 @@ internal class Program
 
     }
 
-    private static void PutDateToFile(object resultStat, string filePath)
+    private static void PutDataToFile(object resultStat, string filePath)
     {
         var writer = new StreamWriter(filePath);
         Log.Information("Writing data to CSV file {FilePath}", filePath);
