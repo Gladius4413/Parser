@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "6mctbYbi3IqeqVm0A2AjyARtiEWdKHoSel/pHcmXg8VF+o6mJHARI/hfjg5vDP++ts/+jPM83GngMzF2mRXU9w==",
+  "dgSpecHash": "R3RAoCrYTxhKN4iF7l0nu4YNkWiHeizd0rF5tSSO8/9+T5dtosOP28w44YCcDSY9bgILy9XFjI+n1KfGYZLSAQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Pipec\\Desktop\\Лабы\\С#\\GitPrac\\NasdaqOmxNordicParser\\BourseParsing\\BourseParser.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Pipec\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512",
     "C:\\Users\\Pipec\\.nuget\\packages\\itext7\\8.0.0\\itext7.8.0.0.nupkg.sha512",
     "C:\\Users\\Pipec\\.nuget\\packages\\itext7.commons\\8.0.0\\itext7.commons.8.0.0.nupkg.sha512",
     "C:\\Users\\Pipec\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\1.1.0\\microsoft.dotnet.platformabstractions.1.1.0.nupkg.sha512",
@@ -33,6 +34,9 @@
     "C:\\Users\\Pipec\\.nuget\\packages\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Pipec\\.nuget\\packages\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Pipec\\.nuget\\packages\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
+    "C:\\Users\\Pipec\\.nuget\\packages\\serilog\\2.12.0\\serilog.2.12.0.nupkg.sha512",
+    "C:\\Users\\Pipec\\.nuget\\packages\\serilog.sinks.console\\4.1.0\\serilog.sinks.console.4.1.0.nupkg.sha512",
+    "C:\\Users\\Pipec\\.nuget\\packages\\serilog.sinks.file\\5.0.0\\serilog.sinks.file.5.0.0.nupkg.sha512",
     "C:\\Users\\Pipec\\.nuget\\packages\\system.appcontext\\4.1.0\\system.appcontext.4.1.0.nupkg.sha512",
     "C:\\Users\\Pipec\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\Pipec\\.nuget\\packages\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",

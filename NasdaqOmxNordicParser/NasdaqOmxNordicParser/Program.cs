@@ -1,70 +1,57 @@
-﻿using CsvHelper;
-using HtmlAgilityPack;
-using NasdaqOmxNordicParser.Models;
-using Serilog;
+﻿
+using Support;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using System.Text;
+using System.Threading.Tasks;
 
-
- class Program
+namespace NasdaqOmxNordicParser
 {
-    private static readonly HttpClient httpClient = new HttpClient();
-    private static readonly string url = "https://www.nasdaqomxnordic.com/optionsandfutures/microsite?Instrument=SE0000337842";
-    private static readonly string filePath = @"data.csv";
-
-    static void Main(string[] args)
+    class Program
     {
-       
-    // Configure Serilog logging
-    Log.Logger = new LoggerConfiguration()
-            .MinimumLevel.Information()
-            .WriteTo.Console()
-            .WriteTo.File("log.txt", rollingInterval: RollingInterval.Day)
-            .CreateLogger();
-
-        try
+        static void Main(string[] args)
         {
-            // Get HTML content
-            Log.Information("Getting HTML content from {Url}", url);
-            var response =  httpClient.GetAsync(url).Result;
-            var content =  response.Content.ReadAsStringAsync().Result;
+            var proxy = new WebProxy("127.0.0.1:8888");
+            var cookieContainer = new CookieContainer();
 
-            // Load HTML content into HtmlDocument
-            Log.Information("Parsing HTML content");
-            var doc = new HtmlDocument();
-            doc.LoadHtml(content);
+            var getRequest = new GetRequest($"https://www.nasdaqomxnordic.com/");
+            getRequest.Accept = "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7";
+            getRequest.Useragent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 YaBrowser/23.5.0.2199 Yowser/2.5 Safari/537.36";
+            //getRequest.Headers.Add("sec-ch-ua", "\"Chromium\";v=\"92\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"92\"");
+            //getRequest.Headers.Add("sec-ch-ua-mobile", "?0");
+            //getRequest.Headers.Add("Sec-Fetch-Dest", "document");
+            //getRequest.Headers.Add("Sec-Fetch-Mode", "navigate");
+            //getRequest.Headers.Add("Sec-Fetch-Site", "same-origin");
+            //getRequest.Headers.Add("Upgrade-Insecure-Requests", "1");
+            getRequest.Host = "www.nasdaqomxnordic.com";
+            getRequest.Proxy = proxy;
+            getRequest.Run(cookieContainer);
 
-            // Get table rows and write to CSV file
-            Log.Information("Writing data to CSV file {FilePath}", filePath);
-            using (var writer = new StreamWriter(filePath))
-            {
-                foreach (var row in doc.DocumentNode.SelectNodes("//table[contains(@class,'table-options')]/tbody/tr"))
-                {
-                    var cells = row.SelectNodes("td");
-                    var expirationDate = cells[0].InnerText.Trim();
-                    var strikePrice = cells[1].InnerText.Trim();
-                    var bidPrice = cells[2].InnerText.Trim();
-                    var askPrice = cells[3].InnerText.Trim();
-                    var volume = cells[4].InnerText.Trim();
-                    var openInterest = cells[5].InnerText.Trim();
 
-                    writer.WriteLine($"{expirationDate},{strikePrice},{bidPrice},{askPrice},{volume},{openInterest}");
-                }
-            }
+            //var postrequest = new postrequest("https://baucenter.ru/");
+            //postrequest.data = $"ajax_call=y&input_id=title-search-input&q={code}&l=2";
+            //postrequest.accept = "*/*";
+            //postrequest.useragent = "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/92.0.4515.159 safari/537.36";
+            //postrequest.contenttype = "application/x-www-form-urlencoded";
+            //postrequest.referer = "https://baucenter.ru/";
+            //postrequest.host = "baucenter.ru";
+            //postrequest.proxy = proxy;
 
-            // Save data to database
-            Log.Information("Saving data to database");
-            // TODO: Implement database saving logic
+            //postrequest.headers.add("bx-ajax", "true");
+            //postrequest.headers.add("origin", "https://baucenter.ru");
+            //postrequest.headers.add("sec-ch-ua", "\"chromium\";v=\"92\", \" not a;brand\";v=\"99\", \"google chrome\";v=\"92\"");
+            //postrequest.headers.add("sec-ch-ua-mobile", "?0");
+            //postrequest.headers.add("sec-fetch-dest", "empty");
+            //postrequest.headers.add("sec-fetch-mode", "cors");
+            //postrequest.headers.add("sec-fetch-site", "same-origin");
 
-            Log.Information("Done");
-        }
-        catch (Exception ex)
-        {
-            Log.Error(ex, "An error occurred while parsing data");
-        }
-        finally
-        {
-            Log.CloseAndFlush();
+            //postrequest.run(cookiecontainer);
+
+
+
+            Console.ReadKey();
         }
     }
 }

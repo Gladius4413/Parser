@@ -1,0 +1,12 @@
+C:\Users\Pipec\Desktop\Лабы\С#\GitPrac\NasdaqOmxNordicParser\Support\bin\Debug\net7.0\Support.deps.json
+C:\Users\Pipec\Desktop\Лабы\С#\GitPrac\NasdaqOmxNordicParser\Support\bin\Debug\net7.0\Support.dll
+C:\Users\Pipec\Desktop\Лабы\С#\GitPrac\NasdaqOmxNordicParser\Support\bin\Debug\net7.0\Support.pdb
+C:\Users\Pipec\Desktop\Лабы\С#\GitPrac\NasdaqOmxNordicParser\Support\obj\Debug\net7.0\Support.csproj.AssemblyReference.cache
+C:\Users\Pipec\Desktop\Лабы\С#\GitPrac\NasdaqOmxNordicParser\Support\obj\Debug\net7.0\Support.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pipec\Desktop\Лабы\С#\GitPrac\NasdaqOmxNordicParser\Support\obj\Debug\net7.0\Support.AssemblyInfoInputs.cache
+C:\Users\Pipec\Desktop\Лабы\С#\GitPrac\NasdaqOmxNordicParser\Support\obj\Debug\net7.0\Support.AssemblyInfo.cs
+C:\Users\Pipec\Desktop\Лабы\С#\GitPrac\NasdaqOmxNordicParser\Support\obj\Debug\net7.0\Support.csproj.CoreCompileInputs.cache
+C:\Users\Pipec\Desktop\Лабы\С#\GitPrac\NasdaqOmxNordicParser\Support\obj\Debug\net7.0\Support.dll
+C:\Users\Pipec\Desktop\Лабы\С#\GitPrac\NasdaqOmxNordicParser\Support\obj\Debug\net7.0\refint\Support.dll
+C:\Users\Pipec\Desktop\Лабы\С#\GitPrac\NasdaqOmxNordicParser\Support\obj\Debug\net7.0\Support.pdb
+C:\Users\Pipec\Desktop\Лабы\С#\GitPrac\NasdaqOmxNordicParser\Support\obj\Debug\net7.0\ref\Support.dll

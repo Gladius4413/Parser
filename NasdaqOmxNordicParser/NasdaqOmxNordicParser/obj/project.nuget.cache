@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "tpEQH4XJQcjcG3fwBAs/4GpOP+bTKtQa5NnUMLdtSAEQiwswZTaWe1Yf6VgliJ2x+OpsgEujsQ6OaiYETxnAbQ==",
+  "dgSpecHash": "RP3XixbIUdBQSeZpCZlaroS8dPaNY60mTO85YPfWrmcJpYB6aNYdbWpuZPJTGnNRZU0I79VfDdkqbh9gaTA5GQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Pipec\\Desktop\\Лабы\\С#\\GitPrac\\NasdaqOmxNordicParser\\NasdaqOmxNordicParser\\NasdaqOmxNordicParser.csproj",
   "expectedPackageFiles": [

@@ -188,6 +188,16 @@
             "rid": "win"
           }
         }
+      },
+      "Support/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Support.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Support.dll": {}
+        }
       }
     }
   },
@@ -551,6 +561,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Support/1.0.0": {
+      "type": "project",
+      "path": "../Support/Support.csproj",
+      "msbuildProject": "../Support/Support.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -560,6 +575,7 @@
       "Serilog >= 2.12.0",
       "Serilog.Sinks.Console >= 4.1.0",
       "Serilog.Sinks.File >= 5.0.0",
+      "Support >= 1.0.0",
       "log4net >= 2.0.15"
     ]
   },
@@ -589,7 +605,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Pipec\\Desktop\\Лабы\\С#\\GitPrac\\NasdaqOmxNordicParser\\Support\\Support.csproj": {
+              "projectPath": "C:\\Users\\Pipec\\Desktop\\Лабы\\С#\\GitPrac\\NasdaqOmxNordicParser\\Support\\Support.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

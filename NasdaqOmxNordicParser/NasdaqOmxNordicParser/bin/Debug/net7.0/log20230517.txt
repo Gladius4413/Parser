@@ -1,0 +1,2 @@
+2023-05-17 21:51:31.739 +03:00 [INF] Getting HTML content from https://www.nasdaqomxnordic.com/optionsandfutures/microsite?Instrument=SE0000337842
+2023-05-17 21:52:47.834 +03:00 [INF] Getting HTML content from https://www.nasdaqomxnordic.com/webproxy/DataFeedProxy.aspx

@@ -13,6 +13,7 @@
           "Serilog": "2.12.0",
           "Serilog.Sinks.Console": "4.1.0",
           "Serilog.Sinks.File": "5.0.0",
+          "Support": "1.0.0",
           "log4net": "2.0.15"
         },
         "runtime": {
@@ -126,6 +127,11 @@
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.0.0"
         }
+      },
+      "Support/1.0.0": {
+        "runtime": {
+          "Support.dll": {}
+        }
       }
     }
   },
@@ -218,6 +224,11 @@
       "sha512": "sha512-U77HfRXlZlOeIXd//Yoj6Jnk8AXlbeisf1oq1os+hxOGVnuG+lGSfGqTwTZBoORFF6j/0q7HXIl8cqwQ9aUGqQ==",
       "path": "system.security.principal.windows/4.5.0",
       "hashPath": "system.security.principal.windows.4.5.0.nupkg.sha512"
+    },
+    "Support/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
